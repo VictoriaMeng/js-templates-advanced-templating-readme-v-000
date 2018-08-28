@@ -4,7 +4,7 @@ Handlebars.registerHelper('comment_body', function() {
   } else {
     return new Handlebars.SafeString("<strong>" + this.body + "</strong>")
   }
-})
+});
 
 function loadIssue() {
   var template = Handlebars.compile(document.getElementById("issue-template").innerHTML);
